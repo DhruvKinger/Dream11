@@ -6,12 +6,12 @@ It is a project under which different users can register,after filling in some d
 
 
 ### Advanced Features Implemented :
-#### Google SignIn Facility:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(595).png)
+#### Application User Count:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(601).png)
 #### User Account Management through UserIdentity:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(564).png)
-#### Searching Functionalities: 
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(565).png)
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(564).png)
+#### Password Encryption Base 64: 
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(600).png)
 
 
 + [Development](#development)
@@ -107,8 +107,8 @@ If you receive a User Account Control notice, choose Yes.
 
 ## Screenshots
 
-#### Organization Login Portal,Individual Donor Login Portal and Admin Login Portal:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(562).png)
+#### User and Admin Login Portal:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(599).png)
 #### Admin Panel(After Login):
 ![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(570).png)
 #### Organization's Dashboard:
