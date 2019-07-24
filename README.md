@@ -132,6 +132,7 @@ If you receive a User Account Control notice, choose Yes.
 
 
 ## Furture Scope:
-* Windows application development for other mac and Linux, so that the Dream11 is easily accessible to user easily anywhere and can play th game. The core benefit of the application development lies in improved quality of interface through timely response. Moreover, windows applications support vital features.
+* Windows application development for other mac and Linux, so that the Dream11 is easily accessible to user easily anywhere and can play th game. The core benefit of the application development lies in improved quality of interface through timely response. 
 *	We can check location from GPS that from which location the new user has registered.
 * The system could also be enhanced by adding the Machine Learning to the project that is it can be used in future to predict the result of the match using Azure Machine Learning.
+* Android and IOS Apps for this game.So,that users can access it on Mobile Devices too. 
