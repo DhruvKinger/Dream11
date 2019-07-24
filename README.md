@@ -12,6 +12,8 @@ It is a project under which different users can register,after filling in some d
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(602).png)
 #### Password Encryption Base 64: 
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(600).png)
+#### Upcoming Matches CountDown: 
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(608).png)
 
 
 + [Development](#development)
@@ -101,9 +103,8 @@ If you receive a User Account Control notice, choose Yes.
 + Users have to do only one thing that is creating their best possible team that consists of Validations like(Maximum 1 WK,Maximum 4 Bowlers,Maximum 5 Batsman,Maximum 2 AllRounders).
 + In order to see the results User need to signin.
 + Login and Logout Functionaly is with the help of User.Identity Package.
-
-
-
++ Applied Hit Counter that displays number of users of Website.
++ Password is Encrypted in Base 64 before saving into the database.
 
 ## Screenshots
 
@@ -119,12 +120,12 @@ If you receive a User Account Control notice, choose Yes.
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(606).png)
 #### Admin Creating Players:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(605).png)
-#### User can Check Blood Stocks:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(590).png)
-#### Managing The Account:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(596).png)
-#### Upcoming Events:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(592).png)
+#### Admin Updating Venues
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(607).png)
+#### User Account Management:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(612).png)
+#### Checking Results:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(610).png)
 #### Password Changing Panel:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(611).png)
 
