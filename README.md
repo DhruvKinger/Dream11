@@ -22,6 +22,8 @@ It is a project under which different users can register,after filling in some d
 + [Features](#features)
 + [Screenshots](#screenshots)
 
+
+
 ## Development
 The backend of the system is developed on *[MSSQL SERVER](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)* and it is free and open source. You just need to download this and installed it on your pc and it will be integrated with the Frontend in the Visual Studio 2017.
 The front end is built on *[ASP.NET C#]*, you can use that in Visual Studio an OpenSource Platform Developed By Microsoft.Bootstrap Files are used too[Bootstrap v2.2.2](http://bootstrapdocs.com/v2.2.2/docs/) using [jQuery](https://blog.jquery.com/2013/02/04/jquery-1-9-1-released/) and [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) and basic HTML/CSS/Javascript are used.
@@ -43,9 +45,9 @@ The front end is built on *[ASP.NET C#]*, you can use that in Visual Studio an O
 
 ### Technology Used
 * [ASP.NET C#](https://www.tutorialspoint.com/asp.net/) - ASP.NET C# For Learning Basics
-* [Ajax](https://stackoverflow.com/questions/9988634/ajax-call-into-mvc-controller-url-issue/9988672) - Calling Controller From View using Ajax
+* [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) - Introducing with Ajax
 * [JQuery](https://www.w3schools.com/jquery/) - Jquery for creating Validations
-* [Entity Framework](https://stackoverflow.com/questions/16480295/linq-group-by-and-order-by-in-c-sharp) -For adding some extra functionality through OrderBy and GroupBy
+* [CSS](https://www.quackit.com/css/tutorial/implementing_css.cfm) -For Adding CSS in Design
 
 ## Setup
 
@@ -100,7 +102,7 @@ If you receive a User Account Control notice, choose Yes.
 + Admin is more of the supreme or you can say a Senior Vice President Person who commands and monitors the progress.
 + Admin adds different Venues,Matches,Countries etc. and so on.
 + Once match is over then Admin updates the points of the players on the basis of fixed criteria already set(say like 2 points for every wicket,1.5 points for taking a catch and so on).
-+ Users have to do only one thing that is creating their best possible team that consists of Validations like(Maximum 1 WK,Maximum 4 Bowlers,Maximum 5 Batsman,Maximum 2 AllRounders).
++ Users have to do only one thing that is creating their best possible team that consists of Validations like(Maximum 1 Wicket Keeper,Maximum 4 Bowlers,Maximum 5 Batsman,Maximum 2 AllRounders).
 + In order to see the results User need to signin.
 + Login and Logout Functionaly is with the help of User.Identity Package.
 + Applied Hit Counter that displays number of users of Website.
