@@ -8,8 +8,8 @@ It is a project under which different users can register,after filling in some d
 ### Advanced Features Implemented :
 #### Application User Count:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(601).png)
-#### User Account Management through UserIdentity:
-![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(564).png)
+#### Subscribe For Latest News:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(602).png)
 #### Password Encryption Base 64: 
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(600).png)
 
@@ -29,14 +29,14 @@ The front end is built on *[ASP.NET C#]*, you can use that in Visual Studio an O
 + PRs are always welcome to improve exisiting system and documentation too.:thumbsup:
 
 ### Default Login Credentials For Admin
-| Username | Password |
+| Username      | Password |
 | ------------- | ------------- |
-| dhruvkinger813@gmail.com | India99@ |
+|    ADMIN      | ADMIN |
 
 ### Default Login Credentials For User
 | Username | Password |
 | ------------- | ------------- |
-| dtilak1999@gmail.com | dTilak99|
+| dk | 12345|
 
 
 ### Technology Used
@@ -110,9 +110,9 @@ If you receive a User Account Control notice, choose Yes.
 #### User and Admin Login Portal:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(599).png)
 #### Admin Panel(After Login):
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(570).png)
-#### Organization's Dashboard:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(594).png)
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(603).png)
+#### Registration Form For User:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(609).png)
 #### Login with Google Association View :
 ![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(563).png)
 #### Account Verification Link:
@@ -126,7 +126,7 @@ If you receive a User Account Control notice, choose Yes.
 #### Upcoming Events:
 ![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(592).png)
 #### Password Changing Panel:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(597).png)
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(611).png)
 
 
 ## Furture Scope:
