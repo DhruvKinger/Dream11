@@ -1,5 +1,5 @@
-# Rudhir-A-BDMS
-It is a project under which diff donors can register and with their address we can tell them you should donate your blood at these banks.Adding on Users who need blood don't require to register then can easily view the stock available for specific blood and can get it through the help of Organizations.Also diff Hospitals can register here and can have blood stock updated. Admin Update camps that are going to take place and these can be viewed by everyone. 
+# Dream11
+It is a project under which diff users can register after filling in some details and can create their team of upcoming International Cricket Match who them think will perform in next match.They have to choose mix players from both the teams and some validations are set according to which their team selection will be done.Once fixed no of users are created the user cann't create team for that amtch.After the match Admin Updates points of the players on the basis of their performance.User with maximum points will win the competition. 
 
 #### Website's Home Page:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(531).png)
@@ -22,8 +22,7 @@ It is a project under which diff donors can register and with their address we c
 
 ## Development
 The backend of the system is developed on *[MSSQL SERVER](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)* and it is free and open source. You just need to download this and installed it on your pc and it will be integrated with the Frontend in the Visual Studio 2017.
-The front end is built on *[MVC]*, you can use that in Visual Studio an OpenSource Platform Developed By Microsoft.Bootstrap Files are used too[Bootstrap v2.2.2](http://bootstrapdocs.com/v2.2.2/docs/) using [jQuery](https://blog.jquery.com/2013/02/04/jquery-1-9-1-released/) and [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) and basic HTML/CSS/Javascript are used.On Form Submission Sweet Alert Library of Javascript is used which gives a beautiful popup.
-Entity Framework 6.0 is used with the Database First approach is followed In this project(That Is Firstly database is developed then after that Model  and then Controller and View).
+The front end is built on *[ASP.NET C#]*, you can use that in Visual Studio an OpenSource Platform Developed By Microsoft.Bootstrap Files are used too[Bootstrap v2.2.2](http://bootstrapdocs.com/v2.2.2/docs/) using [jQuery](https://blog.jquery.com/2013/02/04/jquery-1-9-1-released/) and [Ajax](https://www.w3schools.com/xml/ajax_intro.asp) and basic HTML/CSS/Javascript are used.
 
 ## Contribute
 + For reporting bug about an incorrect file not being processed, open a new issue.
@@ -34,19 +33,14 @@ Entity Framework 6.0 is used with the Database First approach is followed In thi
 | ------------- | ------------- |
 | dhruvkinger813@gmail.com | India99@ |
 
-### Default Login Credentials For Individual Donor
+### Default Login Credentials For User
 | Username | Password |
 | ------------- | ------------- |
 | dtilak1999@gmail.com | dTilak99|
 
-### Default Login Credentials For Organization
-| Username | Password |
-| ------------- | ------------- |
-| cse1785@gmail.com | Cse1785@ |
-
 
 ### Technology Used
-* [MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) - MVC For Learning Basics
+* [ASP.NET C#](https://www.tutorialspoint.com/asp.net/) - ASP.NET C# For Learning Basics
 * [Ajax](https://stackoverflow.com/questions/9988634/ajax-call-into-mvc-controller-url-issue/9988672) - Calling Controller From View using Ajax
 * [JSON](https://www.w3schools.com/whatis/whatis_json.asp) - JSON Library, for storing configurations
 * [Entity Framework](https://stackoverflow.com/questions/16480295/linq-group-by-and-order-by-in-c-sharp) -For adding some extra functionality through OrderBy and GroupBy
@@ -100,11 +94,11 @@ If you receive a User Account Control notice, choose Yes.
     Next, status screens appear that show the progress of your Visual Studio installation.
 
 ## Features
-+ Admin can update events(say a BloodCamp being Organized)and Admin have the right to Block someone's account if he finds that their records are false or some other issue is there.
++ Admin can create players.Details of players are also updated by Admin.
 + Admin is more of the supreme or you can say a Senior Vice President Person who commands and monitors the progress.
-+ Organization can access only the its portal but can do a lot of stuff their.It can add Donors as much as they wish.If a person contacts them for blood,they just need to click a button and email will be sent to all the Donors of the Organization whose blood group matches with the required one.
-+ Admin can see all the processes going on say who has contacted which Organization on what date for which blood group.
-+ Admin  can *Update* data and *Mark As Deleted**(i.e flag the data in table from n to y/ One of the *important* feature used in the Companies at big level).As no data is ever deleted it just *Mark As Deleted**.
++ Admin adds different Venues,Matches,Countries etc. and so on.
++ Once match is over then Admin updates the points of the players on the basis of fixed criteria already set(say like 2 points for every wicket,1.5 points for taking a catch and so on).
++ Users have to do only one thing that is creating their best possible team that consists of Validations like(Max 1 WK,MAX 4 Bowlers,MAX 5 Batsman,MAX 2 All Rounders).
 + Individual Donors can register and after registration they are shown with the List of BloodBanks in his state where blood is required.
 + We would be able to generate the dynamic reports through *Google API's and JSON* which would help the authority to find different important information System about the Processes going on.
 + *Login and Logout Functionaly is with the help of User.Identity Package*.
