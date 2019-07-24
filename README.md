@@ -1,5 +1,5 @@
 # Dream11
-It is a project under which different users can register,after filling in some details and then can create their team of upcoming International Cricket Matches by choosing a mixed team of 11 players,whom they think will perform well in the match.They have to choose mix players from both the teams and some validations are set according to which their team selection will be done.Once fixed no of users are created the user cann't create team for that amtch.After the match Admin Updates points of the players on the basis of their performance.User with maximum points will win the competition. 
+It is a project under which different users can register,after filling in some details and then can create their team of upcoming International Cricket Matches by choosing a mixed team of 11 players,whom they think will perform well in the match.They have to choose mix players from both the teams and some validations are set according to which their team selection will be done.Once fixed no of users are created for a particular match then user cann't create more teams.Once the match is over Admin Updates points of the players on the basis of their performance.User with maximum points will win the competition. 
 
 #### Website's Home Page:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(531).png)
@@ -42,7 +42,7 @@ The front end is built on *[ASP.NET C#]*, you can use that in Visual Studio an O
 ### Technology Used
 * [ASP.NET C#](https://www.tutorialspoint.com/asp.net/) - ASP.NET C# For Learning Basics
 * [Ajax](https://stackoverflow.com/questions/9988634/ajax-call-into-mvc-controller-url-issue/9988672) - Calling Controller From View using Ajax
-* [JSON](https://www.w3schools.com/whatis/whatis_json.asp) - JSON Library, for storing configurations
+* [JQuery](https://www.w3schools.com/jquery/) - Jquery for creating Validations
 * [Entity Framework](https://stackoverflow.com/questions/16480295/linq-group-by-and-order-by-in-c-sharp) -For adding some extra functionality through OrderBy and GroupBy
 
 ## Setup
@@ -99,7 +99,7 @@ If you receive a User Account Control notice, choose Yes.
 + Admin adds different Venues,Matches,Countries etc. and so on.
 + Once match is over then Admin updates the points of the players on the basis of fixed criteria already set(say like 2 points for every wicket,1.5 points for taking a catch and so on).
 + Users have to do only one thing that is creating their best possible team that consists of Validations like(Max 1 WK,MAX 4 Bowlers,MAX 5 Batsman,MAX 2 All Rounders).
-+ Individual Donors can register and after registration they are shown with the List of BloodBanks in his state where blood is required.
++ In order to see the results User need to signin.
 + We would be able to generate the dynamic reports through *Google API's and JSON* which would help the authority to find different important information System about the Processes going on.
 + *Login and Logout Functionaly is with the help of User.Identity Package*.
 + Users who need Blod not reuire to register they can directly check blood they require after tht they will be shown with Organizations having Blood Stocks plus the Individual Donors who can provide Blood too.
@@ -132,7 +132,6 @@ If you receive a User Account Control notice, choose Yes.
 
 
 ## Furture Scope:
-* Windows application development for other mac and Linux, so that the Rudhir: A BDMS is easily accessible to user easily anywhere and get the benefits. The core benefit of the application development lies in improved quality of interface through timely response. Moreover, windows applications support vital features like uploading pictures.
-*	We can check location from GPS and it can easily tell other Individual Donor to donate blood at this place where blood is required.
-* The system could also be enhanced by adding the voice response system through the voice control system, which would help the user to quickly react instead of typing.
-* We can add report submission forms to Individual Donors. So that it must be verified that one who is willing to give blood is free   from diseases. 
+* Windows application development for other mac and Linux, so that the Dream11 is easily accessible to user easily anywhere and can play th game. The core benefit of the application development lies in improved quality of interface through timely response. Moreover, windows applications support vital features.
+*	We can check location from GPS that from which location the new user has registered.
+* The system could also be enhanced by adding the Machine Learning to the project that is it can be used in future to predict the result of the match using Azure Machine Learning.
