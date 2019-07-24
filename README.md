@@ -98,9 +98,9 @@ If you receive a User Account Control notice, choose Yes.
 + Admin is more of the supreme or you can say a Senior Vice President Person who commands and monitors the progress.
 + Admin adds different Venues,Matches,Countries etc. and so on.
 + Once match is over then Admin updates the points of the players on the basis of fixed criteria already set(say like 2 points for every wicket,1.5 points for taking a catch and so on).
-+ Users have to do only one thing that is creating their best possible team that consists of Validations like(Max 1 WK,MAX 4 Bowlers,MAX 5 Batsman,MAX 2 All Rounders).
++ Users have to do only one thing that is creating their best possible team that consists of Validations like(Maximum 1 WK,Maximum 4 Bowlers,Maximum 5 Batsman,Maximum 2 AllRounders).
 + In order to see the results User need to signin.
-+ *Login and Logout Functionaly is with the help of User.Identity Package*.
++ Login and Logout Functionaly is with the help of User.Identity Package.
 
 
 
@@ -113,12 +113,12 @@ If you receive a User Account Control notice, choose Yes.
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(603).png)
 #### Registration Form For User:
 ![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(609).png)
-#### Login with Google Association View :
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(563).png)
-#### Account Verification Link:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(569).png)
-#### Admin Viewing Donors Of Organization:
-![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(572).png)
+#### Admin Point Updater :
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(604).png)
+#### Admin Updating Matches List:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(606).png)
+#### Admin Creating Players:
+![](https://github.com/DhruvKinger/Dream11/blob/master/Forgithub/Screenshot%20(605).png)
 #### User can Check Blood Stocks:
 ![](https://github.com/DhruvKinger/Rudhir-A-BDMS/blob/master/Forgithub/Screenshot%20(590).png)
 #### Managing The Account:
