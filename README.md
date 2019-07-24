@@ -100,10 +100,8 @@ If you receive a User Account Control notice, choose Yes.
 + Once match is over then Admin updates the points of the players on the basis of fixed criteria already set(say like 2 points for every wicket,1.5 points for taking a catch and so on).
 + Users have to do only one thing that is creating their best possible team that consists of Validations like(Max 1 WK,MAX 4 Bowlers,MAX 5 Batsman,MAX 2 All Rounders).
 + In order to see the results User need to signin.
-+ We would be able to generate the dynamic reports through *Google API's and JSON* which would help the authority to find different important information System about the Processes going on.
 + *Login and Logout Functionaly is with the help of User.Identity Package*.
-+ Users who need Blod not reuire to register they can directly check blood they require after tht they will be shown with Organizations having Blood Stocks plus the Individual Donors who can provide Blood too.
-+ Organizations and Individual Donors can also register through Google SignIn.If they register normally then firstly email is sent which is verified through token only then their account is activated.
+
 
 
 
