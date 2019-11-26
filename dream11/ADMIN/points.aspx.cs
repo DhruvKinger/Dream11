@@ -21,17 +21,25 @@ public partial class ADMIN_point : System.Web.UI.Page
         }
     }
 
-
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/index.aspx");
+    }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
         SqlCommand cmd = new SqlCommand("point_updater", con);
         cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.Add("@team",SqlDbType.VarChar, 50).Value = Dt.SelectedValue.ToString();
         cmd.Parameters.Add("@name",SqlDbType.VarChar,50).Value = D2.SelectedValue.ToString();
-        cmd.Parameters.Add("@score", SqlDbType.Int).Value = T1.Text;
+        cmd.Parameters.Add("@score", SqlDbType.Float).Value = T1.Text;
         cmd.ExecuteNonQuery();
         cmd.Dispose();
         con.Close();
-        T1.Text = String.Empty; Response.Redirect("index.aspx");
+        D1.Text = String.Empty;
+       // Dt.Text = String.Empty;
+        //D2.Text = String.Empty;
+        T1.Text = String.Empty;
+       // Response.Redirect("index.aspx");
     }
 }

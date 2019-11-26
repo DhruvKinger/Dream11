@@ -1,122 +1,163 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="players.aspx.cs" Inherits="ADMIN_Default" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="players.aspx.cs" Inherits="ADMIN_Default" MaintainScrollPositionOnPostback="true" %>
+         
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sportz &mdash; Watch and Play Along!!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            font-weight: bold;
-            font-size: medium;
-            color: #FFFFFF;
-            background-color: #000000;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
-        .auto-style3 {
-            font-size: xx-large;
-        }
-        .auto-style4 {
-            color: #FFFFFF;
-        }
-        .auto-style5 {
-            color: #000000;
-        }
-        #xxt{
-            border-bottom:1px solid #000;
-            background-color:#ccccff;
-            width:100%;
-            height:80px;
-            top:0;
-            left:0;
-            display:none;
-            position:absolute;
-            text-align:center;
-        }
-        .newStyle1 {
-            border-style: dotted;
-        }
-        .auto-style6 {
-            border-style: dotted;
-            color: #FFFFFF;
-        }
-        .auto-style7 {
-            margin-left: 223px;
-        }
-    </style>
-     <script type="text/javascript" src="../jquery.js"></script>
-</head>
-    <script>
-        $(function () {
-            console.log("Errors");
-            $("#Button1").click(function() {
-                var a = $("#TextBox1").val();
-                var b = $("#D").val();
-                var x = $("#TextBox3").val();
-                var z = $("#TextBox5").val();
-                if (x == ""|| z == "" || a == "" || b == "")
-            {
-                $("#xxt").html("<h3>Fill Details First</h3>").slideDown().delay(2000).slideUp();
-            }         
-               else 
-            {
-                    $("#xxt").html("<h3>Saved Sucessfully</h3>").slideDown();//.delay(1000).slideUp();
-            }
-        });
-        });
-    </script>
-<body style="background-image:url(pal.jpg);width:100%;height:100%; background-repeat:no-repeat; background-size:cover;">
-    <form id="form1" runat="server">
-        <div id="xxt"></div>
-        
-        <div class="auto-style2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-            <div class="auto-style2">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-            <span class="auto-style3"><span class="auto-style6"><strong>PLAYERS DETAILS</strong></span><strong><br />
-            </strong></span><strong>
-            <br />
-            <span class="auto-style5">Name:</span><span class="auto-style4">&nbsp; </span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            Category:
-            <asp:DropDownList ID="D" runat="server" AutoPostBack="True" Width="164px">
-                <asp:ListItem>Choose Category</asp:ListItem>
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-logo">
+          <a href="#"><img src="images/logo.png" alt="Image"></a>
+        </div>
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar absolute transparent" role="banner">
+      <div class="py-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3">
+              <a href="#" class="text-secondary px-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="text-secondary px-2"><span class="icon-instagram"></span></a>
+              <a href="#" class="text-secondary px-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="text-secondary px-2"><span class="icon-linkedin"></span></a>
+            </div>
+           <div class="col-6 col-md-9 text-right">
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">dhruvkinger813@gmail.com</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">+91 788 897 0163</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
+        <div class="container position-relative">
+          <div class="site-logo">
+            <a href="index.aspx"><img src="images/logo.png" alt=""></a>
+          </div>
+
+          <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          <ul class="site-menu js-clone-nav d-none d-md-block">
+             <ul class="site-menu js-clone-nav d-none d-md-block">
+            <li >
+              <a href="index.aspx">Admin Home</a> 
+            </li>
+            <li ><a href="points.aspx">Points</a></li>         
+             <li><a href="players.aspx">Players</a></li>
+            <li><a href="teams.aspx">Teams</a></li>
+            <li><a href="fixtures.aspx">Matches</a></li>
+            <li><a href="vdate.aspx">Venues </a></li>       
+           <a href="../index.aspx"> <button class="btn btn-primary" type="submit" id="b2">Logout</button></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-start">
+          <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="bg-text-line">PLayer Details</h1>
+            <p class="mt-4">Enter the player details before letting him/her in the match.This is like the registration of the player</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section bg-light" data-aos="fade-up" align="text-center">
+      <div class="container">
+        <div class="row align-items-first">
+          <div class="col-md-7">
+          	<h1 align="align-items-center" class="bg-white" align="text-center" >Player's Details</h1>
+              <form id="form1" runat="server" class="bg-white" align="text-center">
+              
+              <div class="p-3 p-lg-5 border">
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_fname" class="text-black">Name <span class="text-danger">*</span></label>
+                      <asp:TextBox runat="server" CssClass="form-control" ID="TextBox1"></asp:TextBox>
+                      </div>
+                       </div>
+                  <%--<div class="p-3 p-lg-5 border">            --%>
+
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_email" class="text-black">Category <span class="text-danger">*</span></label>
+                    <asp:DropDownList ID="D" runat="server" AutoPostBack="True" CssClass="form-control">
+                 <asp:ListItem>Choose Category</asp:ListItem>
                 <asp:ListItem>Batsman</asp:ListItem>
                 <asp:ListItem>Bowler</asp:ListItem>
                 <asp:ListItem>Wk/Bat</asp:ListItem>
                 <asp:ListItem>All Rounder</asp:ListItem>
             </asp:DropDownList>
-            <br />
-            <br />
-            Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            </strong>&nbsp;<br />
-            <br/>
-            &nbsp;Team:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            <asp:DropDownList ID="D2" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="tname" DataValueField="tname" Width="164px">
-                <asp:ListItem>Choose Team</asp:ListItem>
-                
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_email" class="text-black">Value <span class="text-danger">*</span></label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="TextBox3"></asp:TextBox>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_email" class="text-black">Team <span class="text-danger">*</span></label>
+                     <asp:DropDownList ID="D2" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="tname" DataValueField="tname" CssClass="form-control">
+                <asp:ListItem>Choose Team</asp:ListItem>                
             </asp:DropDownList>
-            </div>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="Disp_Rec" TypeName="dream11.mainteam"></asp:ObjectDataSource>
-            <br />
-            <br />
-&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" CssClass="auto-style1" OnClick="Button1_Click" Text="Save" />
-            <br />
-            <br />
-            <br />
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None"  DataKeyNames="id"   PageSize="8" CssClass="auto-style7" Width="697px">
-                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                  </div>
+                </div>
+                
+
+                
+                <div class="form-group row">
+                  <div class="col-lg-12">
+                      <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="Button1_Click" Text="Save" />
+                  </div>
+                </div> 
+                  
+                   <div>
+                     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" GridLines="None"  DataKeyNames="id" Width="530px" PageSize="8">
+                
                 <Columns>
-                    <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
+                    <asp:TemplateField HeaderText="Name" SortExpression="name">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("name") %>' Width="121px"></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label3" runat="server" Text='<%# Bind("name") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     <asp:TemplateField HeaderText="Category" SortExpression="category">
                         <EditItemTemplate>
                             <strong>
-                            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" SelectedValue='<%# Bind("category") %>'>
+                            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" SelectedValue='<%# Bind("category") %>' Width="124px">
                                 <asp:ListItem>Choose Category</asp:ListItem>
                                 <asp:ListItem>Batsman</asp:ListItem>
                                 <asp:ListItem>Bowler</asp:ListItem>
@@ -129,30 +170,28 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Bind("category") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="value" HeaderText="Value" SortExpression="value" />
-                    <asp:BoundField DataField="team" HeaderText="Team" SortExpression="team" />
-                    <asp:CommandField ShowEditButton="True" />
-                    <asp:TemplateField ShowHeader="False">
+                    <asp:TemplateField HeaderText="Value" SortExpression="value">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("value") %>' Width="72px"></asp:TextBox>
+                        </EditItemTemplate>
                         <ItemTemplate>
-                            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete"></asp:LinkButton>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("value") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
-                </Columns>
-                <EditRowStyle BackColor="#999999" />
-                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                    <asp:BoundField DataField="team" HeaderText="Team" SortExpression="team">
+                    <ControlStyle Width="100px" />
+                    <ItemStyle Width="80px" />
+                    </asp:BoundField>
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                </Columns>                
             </asp:GridView>
-            </strong>
-
-        </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dream11ConnectionString %>" SelectCommand="SELECT * FROM [players]" DeleteCommand="DELETE FROM [players] WHERE [Id] = @Id" InsertCommand="INSERT INTO [players] ([name], [category], [value], [team]) VALUES (@name, @category, @value, @team)" UpdateCommand="UPDATE [players] SET [name] = @name, [category] = @category, [value] = @value, [team] = @team WHERE [Id] = @Id" ProviderName="System.Data.SqlClient">
+                  </div>
+                   
+                  
+<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="Disp_Rec" TypeName="dream11.mainteam"></asp:ObjectDataSource>
+       
+                  
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dream11ConnectionString %>" SelectCommand="SELECT * FROM [players]" DeleteCommand="DELETE FROM [players] WHERE [Id] = @Id" InsertCommand="INSERT INTO [players] ([name], [category], [value], [team]) VALUES (@name, @category, @value, @team)" UpdateCommand="UPDATE [players] SET [name] = @name, [category] = @category, [value] = @value, [team] = @team WHERE [Id] = @Id" ProviderName="System.Data.SqlClient">
             <DeleteParameters>
                 <asp:Parameter Name="Id" Type="Int32" />
             </DeleteParameters>
@@ -170,7 +209,113 @@
                 <asp:Parameter Name="Id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-    </form>
-</body>
+                  </div>
+              </form>
+          </div>
+            
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+   
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">About Sportz</h3>
+              <p>We are the website that will help you to play along with the players you love and this is where the real game starts. You will have a great faceoff with other teams who just like you will have their own team to compete and this will be to get to the top and the best one will WIN.</p>
+            </div>
+
+            
+            
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Quick Menu</h3>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                 <li><a href="index.aspx">Home</a></li>
+                  <li><a href="points.aspx">Points</a></li>
+                  <li><a href="players.aspx">Players</a></li>
+                  <li><a href="fixtures.aspx">Matches</a></li>
+                    <li><a href="teams.aspx">Teams</a></li>
+                    <li><a href="vdate.aspx"></a></li>
+                </ul>
+              </div>
+              
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Follow Us</h3>
+
+                <div>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">Watch Video</h3>
+
+              <div class="block-16">
+                <figure>
+                  <img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
+                  <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                </figure>
+              </div>
+
+            </div>
+
+            <div class="mb-5">
+              <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+              <p>Want the latest updates? Then why wait for it we will send them ourselves.Subscribe to us.s</p>
+
+              <form action="#" method="post">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Send</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+          
+        </div>
+        
+          
+        </div>
      
+    </footer>
+  
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>

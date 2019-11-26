@@ -46,17 +46,15 @@ public partial class ADMIN_Default : System.Web.UI.Page
         TextBox1.Focus();
     }
 
-    protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-
-    }
+    
 
     protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
-        obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
-        obj.Del_rec(obj1);
-        GridView1.DataBind();
+        //obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
+        //obj.Del_rec(obj1);
+        //GridView1.DataBind();
         e.Cancel = true;
     }
-    
+
+
 }

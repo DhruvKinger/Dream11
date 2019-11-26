@@ -7,6 +7,24 @@ using System.Data.SqlClient;
 using System.Configuration;
 namespace dream11
 {
+    public static class GlobalVar
+    {
+        static int _globalValue;
+
+        public static int GlobalValue
+        {
+            get
+            {
+                return _globalValue;
+            }
+            set
+            {
+                _globalValue = value;
+            }
+        }
+
+    }
+
     public interface players
     {
         Int32 id { get; set; }
@@ -752,15 +770,18 @@ namespace dream11
         String p10 { get; set; }
         String p11 { get; set; }
         DateTime time { get; set; }
-        int score { get; set; }
+        float score { get; set; }
         string captain { get; set; }
         string vice_captain { get; set; }
+       string team1 { get; set; }
+        string team2 { get; set; }
     }
 
     public class prpcreate_team : create_team
     {
-        private string pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, ptname, pcaptain, pvice_captain;
-        private Int32 pid, pscore;
+        private string pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, ptname, pcaptain, pvice_captain,pteam1,pteam2;
+        private Int32 pid;
+        private float pscore;
         private DateTime ptime;
         public Int32 id
         {
@@ -773,6 +794,29 @@ namespace dream11
                 pid = value;
             }
         }
+        public string team1
+        {
+            get
+            {
+                return pteam1;
+            }
+            set
+            {
+                pteam1 = value;
+            }
+        }
+        public string team2
+        {
+            get
+            {
+                return pteam2;
+            }
+            set
+            {
+                pteam2 = value;
+            }
+        }
+
         public string p1
         {
             get
@@ -929,7 +973,7 @@ namespace dream11
                 ptime = value;
             }
         }
-        public int score
+        public float score
         {
             get
             {
@@ -992,9 +1036,11 @@ namespace dream11
             cmd.Parameters.Add("@p10", SqlDbType.VarChar, 50).Value = p.p10;
             cmd.Parameters.Add("@p11", SqlDbType.VarChar, 50).Value = p.p11;
             cmd.Parameters.Add("@time", SqlDbType.DateTime).Value = p.time;
-            cmd.Parameters.Add("@score", SqlDbType.Int).Value = p.score;
+            cmd.Parameters.Add("@score", SqlDbType.Float).Value = p.score;
             cmd.Parameters.Add("@captain", SqlDbType.VarChar, 50).Value = p.captain;
             cmd.Parameters.Add("@vice_captain", SqlDbType.VarChar, 50).Value = p.vice_captain;
+            cmd.Parameters.Add("@team1", SqlDbType.VarChar, 50).Value = p.team1;
+            cmd.Parameters.Add("@team2", SqlDbType.VarChar, 50).Value = p.team2;
             cmd.ExecuteNonQuery();
             con.Close();
             cmd.Dispose();
@@ -1022,9 +1068,11 @@ namespace dream11
             cmd.Parameters.Add("@p10", SqlDbType.VarChar, 50).Value = p.p10;
             cmd.Parameters.Add("@p11", SqlDbType.VarChar, 50).Value = p.p11;
             cmd.Parameters.Add("@time", SqlDbType.DateTime).Value = p.time;
-            cmd.Parameters.Add("@score", SqlDbType.Int).Value = p.score;
+            cmd.Parameters.Add("@score", SqlDbType.Float).Value = p.score;
             cmd.Parameters.Add("@captain", SqlDbType.VarChar, 50).Value = p.captain;
             cmd.Parameters.Add("@vice_captain", SqlDbType.VarChar, 50).Value = p.vice_captain;
+            cmd.Parameters.Add("@team1", SqlDbType.VarChar, 50).Value = p.team1;
+            cmd.Parameters.Add("@team2", SqlDbType.VarChar, 50).Value = p.team2;
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = p.id;
             cmd.ExecuteNonQuery();
             con.Close();
@@ -1072,9 +1120,11 @@ namespace dream11
                 k.p10 = dr[11].ToString();
                 k.p11 = dr[12].ToString();
                 k.time = Convert.ToDateTime(dr[13]);
-                k.score = Convert.ToInt32(dr[14]);
+                k.score = Convert.ToSingle(dr[14]);
                 k.captain = dr[15].ToString();
                 k.vice_captain = dr[16].ToString();
+                k.team1 = dr[17].ToString();
+                k.team2 = dr[18].ToString();
                 obj1.Add(k);
             }
             dr.Close();
@@ -1083,7 +1133,7 @@ namespace dream11
             return obj1;
 
         }
-        public List<prpcreate_team> Find_rec(Int32 id)
+        public List<prpcreate_team> Find_rec(Int32 id,Int32 fixid)
         {
             if (con.State == ConnectionState.Closed)
             {
@@ -1112,9 +1162,11 @@ namespace dream11
                 k.p10 = dr[11].ToString();
                 k.p11 = dr[12].ToString();
                 k.time = Convert.ToDateTime(dr[13]);
-                k.score = Convert.ToInt32(dr[14]);
+                k.score = Convert.ToSingle(dr[14]);
                 k.captain = dr[15].ToString();
                 k.vice_captain = dr[16].ToString();
+                k.team1 = dr[17].ToString();
+                k.team2 = dr[18].ToString();
                 obj.Add(k);
             }
             dr.Close();

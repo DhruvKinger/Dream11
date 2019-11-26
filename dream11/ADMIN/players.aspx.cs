@@ -158,6 +158,7 @@ public partial class ADMIN_Default : System.Web.UI.Page
     //{
 
     //}      
+   
     protected void Page_Load(object sender, EventArgs e)
     {
         con.ConnectionString = ConfigurationManager.ConnectionStrings["cn"].ConnectionString;

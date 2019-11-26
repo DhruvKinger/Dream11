@@ -30,32 +30,33 @@ public partial class ADMIN_Default : System.Web.UI.Page
         obj1.date = Convert.ToDateTime(TextBox4.Text);
         obj.Save_Rec(obj1);
         TextBox4.Text = String.Empty;
-        GridView1.DataBind(); Response.Redirect("index.aspx");
+        GridView1.DataBind(); 
+        //        Response.Redirect("index.aspx");
     }
 
-    protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
+    //protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+    //{
+    //    obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
         
-        DropDownList Dr1 = ((DropDownList)GridView1.Rows[e.RowIndex].FindControl("Dr1"));
+    //    DropDownList Dr1 = ((DropDownList)GridView1.Rows[e.RowIndex].FindControl("Dr1"));
 
-        obj1.team1 = Dr1.SelectedValue;
-        DropDownList Dr2 =((DropDownList) GridView1.Rows[e.RowIndex].FindControl("Dr2"));
-        obj1.team2 = Dr2.SelectedValue;
-        DropDownList Dr3 =((DropDownList) GridView1.Rows[e.RowIndex].FindControl("Dr3"));         
-        obj1.venue =Dr3.SelectedValue;
-        obj1.date = DateTime.Parse(((TextBox)(GridView1.Rows[e.RowIndex].Cells[4].Controls[0])).Text);
-        obj.Update_Rec(obj1);
-        GridView1.DataBind();
-        GridView1.EditIndex = -1;
-        e.Cancel=true;
-    }
+    //    obj1.team1 = Dr1.SelectedValue;
+    //    DropDownList Dr2 =((DropDownList) GridView1.Rows[e.RowIndex].FindControl("Dr2"));
+    //    obj1.team2 = Dr2.SelectedValue;
+    //    DropDownList Dr3 =((DropDownList) GridView1.Rows[e.RowIndex].FindControl("Dr3"));         
+    //    obj1.venue =Dr3.SelectedValue;
+    //    obj1.date = DateTime.Parse(((TextBox)(GridView1.Rows[e.RowIndex].Cells[4].Controls[0])).Text);
+    //    obj.Update_Rec(obj1);
+    //    GridView1.DataBind();
+    //    GridView1.EditIndex = -1;
+    //    e.Cancel=true;
+    //}
 
-    protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-    {
-        obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
-        obj.Del_rec(obj1);
-        GridView1.DataBind();
-        e.Cancel = true;
-    }
+    //protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+    //{
+    //    obj1.id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex][0]);
+    //    obj.Del_rec(obj1);
+    //    GridView1.DataBind();
+    //    e.Cancel = true;
+    //}
 }
